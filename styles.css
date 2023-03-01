@@ -144,7 +144,7 @@ footer{
     padding: 1rem;
     background-color: #196774;
     color: #fff;
-    float: clear;
+    clear: both;
 }
 footer p{
     color: #fff;
@@ -229,7 +229,6 @@ input[type="submit"] {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: -6px 6px 10px #363432;
 }
 
 input[type="reset"]{
@@ -238,28 +237,12 @@ input[type="reset"]{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: -6px 6px 10px #363432;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: 3px solid #d9ad9a;
-}
-
-input[type="submit"]:focus {
-    outline: 3px solid #ef6024;
-}
-
-input[type="submit"]:hover {
-    box-shadow: -3px 3px 5px #363432;
-}
-input[type="reset"]:focus {
-    outline: 3px solid #ef6024;
-}
-
-input[type="reset"]:hover {
-    box-shadow: -3px 3px 5px #363432;
 }
 
 input[type="radio"] {
