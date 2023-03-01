@@ -152,14 +152,43 @@ footer p{
 
 /* STYLES FOR CONTACT PAGE*/
 form {
-    width: 580px;
+    width: 600px;
     margin: 16px auto;
-    background-color: rgba(201, 128, 34, 0.788);
+    background-color: #A1B8C7;
+    box-shadow: 2px 5px 8px #aaa;
     padding: 16px;
     color: #363432;
     border-radius: 4px;
 }
-/* Display Styles for Form Elements */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside {
+    border-radius: 4px;
+}
+
+.aside h2 {
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.aside p {
+    color: #222;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+main img {
+    width: 600px;
+    padding: 3px;
+    box-shadow: 2px 5px 8px #aaa;
+}
+
 input,
 label,
 select,
@@ -168,55 +197,36 @@ textarea {
     width: 100%;
 }
 
-/* Label Styles */
 label {
     margin: 4px 16px;
     font-weight: bold;
     text-align: left;
 }
 
-/* Input/Select Sizing styles */
 input,
 select,
 textarea {
-    padding: 10px;
     font-size: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 9px;
     border-radius: 4px;
+    padding: 8px;
     border: 1px inset #196774;
 }
 
-/* Fieldset Styles */
 fieldset {
-    margin-bottom: 14px;
-    border-radius: 4px;
     border-color: #363432;
     display: grid;
-    row-gap: 8px;
+    border-radius: 4px;
+    row-gap: 1px;
     grid-template-rows: repeat(1, 1fr);
 }
 
-/* #grid {
-  display: grid;
-  height: 200px;
-  grid-template-columns: 200px;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 20px;
-} */
-
-/* Legend Styles */
-legend {
-    font-weight: bold;
-}
-
-/* Fieldset Label Styles */
 fieldset label {
-    /* margin-left: 0; */
+    margin-bottom: 13px;
 }
 
-/* Submit Button Styles */
 input[type="submit"] {
-    background: #196774;
+    background: #9f6a1e;
     border: none;
     color: white;
     font-size: 18px;
@@ -224,35 +234,34 @@ input[type="submit"] {
     box-shadow: -6px 6px 10px #363432;
 }
 
-/* Styles for Invalid Data in Inputs in the Form */
-input:invalid {
-    border: 4px solid #ef6024;
+input[type="reset"]{
+    background: #9f6a1e;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
     box-shadow: -6px 6px 10px #363432;
 }
 
-/* Styles for Each Input as it has Focus */
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid #ef6024;
+    outline: 3px solid #d9ad9a;
 }
 
-/* Styles for the Submit Button Focus */
 input[type="submit"]:focus {
     outline: 3px solid #ef6024;
 }
 
-/* Styles for Submit Button Hover */
 input[type="submit"]:hover {
     box-shadow: -3px 3px 5px #363432;
 }
+input[type="reset"]:focus {
+    outline: 3px solid #ef6024;
+}
 
-/* ----------------------------------------------------- */
-/* Optional Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
-input[type="radio"]+label {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+input[type="reset"]:hover {
+    box-shadow: -3px 3px 5px #363432;
 }
 
 input[type="radio"] {
@@ -266,9 +275,8 @@ input[type="radio"] {
 
 input[type="radio"]+label::before {
     content: "\00a0";
-    /* Non-breaking space */
-    font-size: 2.25em;
-    line-height: 0.65;
+    font-size: 2em;
+    line-height: 0.5;
     border-radius: 50%;
     display: inline-block;
     height: 20px;
@@ -276,7 +284,6 @@ input[type="radio"]+label::before {
     text-align: center;
     margin-right: 16px;
     border: 2px solid white;
-    /* Push focus shadow away */
     background-color: #fff;
     padding-bottom: 2px;
 }
@@ -296,58 +303,3 @@ input[type="radio"]:focus+label::before {
 }
 
 
-
-/* main img{
-    width: 300px;
-}
-form{
-    width: 60%;
-    margin: 1rem auto;
-    background-color: #a4a1a1;
-    border-radius: 7px;
-    color: #eee;
-    padding: 1rem;
-}
-input, label, select, textarea{
-    display: block;
-    width: 100%;
-}
-label {
-    margin: 4px 16px;
-    font-weight: bold;
-}
-
-fieldset {
-    margin-bottom: 24px;
-    border-radius: 4px;
-    border-color: #363432;
-    display: grid;
-    row-gap: 8px;
-    grid-template-rows: repeat(1, 1fr);
-} */
-
-
-main{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 10px;
-
-}
-.aside{
-    /* border: 1px solid #000; */
-}
-.aside h2{
-    padding: 3rem;
-    font-size: 5rem;
-}
-.aside p{
-    color: #222;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-main img{
-    padding: 3px;
-    box-shadow: 2px 5px 8px #363432;
-}
