@@ -29,7 +29,7 @@ h1{
     padding: 2rem;
 }
 nav{
-
+padding: 1rem;
 }
 nav ul{
     min-height: 5em;
@@ -152,28 +152,27 @@ footer p{
 
 /* STYLES FOR CONTACT PAGE*/
 form {
-   
-    margin: 16px auto;
+    width: 600px;
     background-color: #A1B8C7;
     box-shadow: 2px 5px 8px #aaa;
     padding: 16px;
     color: #363432;
     border-radius: 4px;
 }
-
-main {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    
+main{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
 }
 
 .aside {
+    margin-top: 20px;
     border-radius: 4px;
 }
 
 .aside h2 {
-    padding: 1rem;
-    font-size: 3rem;
+    padding: 2rem;
+    font-size: 5rem;
 }
 
 .aside p {
@@ -185,7 +184,7 @@ main {
 
 main img {
     width: 600px;
-    padding: 3px;
+    padding-top: 13px;
     box-shadow: 2px 5px 8px #aaa;
 }
 
